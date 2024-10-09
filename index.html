@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lhamas in Black</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/scripts.js" defer></script>
 </head>
 
 <body>
@@ -15,14 +16,73 @@
         <nav>
             <ul>
                 <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="/poke">Pokémon</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#aniversarios">Aniversários</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="poke.html">Pokémon</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h2>Bem-vindo ao Lhamas in Black</h2>
+        <div class="content">
+            <h2>Bem-vindo ao Lhamas in Black</h2>
+            <section id="sobre" class="sobre">
+                <h2>Sobre Nós</h2>
+                <p>Somos um grupo de amigos que se conheceram no ensino médio e hoje somos 9 membros. Sempre curtimos
+                    muito juntos, assistimos filmes, temos ótimas lembranças, brincadeiras e até momentos de raiva
+                    (especialmente com o Daniel estressadinho).</p>
+                <p>A nossa amizade é forte e duradoura. Ao longo dos anos, mantivemos essa proximidade e, mais do que
+                    amigos, somos verdadeiros irmãos. Uma amizade que durará para sempre.</p>
+            </section>
+
+            <section id="aniversarios" class="aniversarios">
+                <h2>Aniversários</h2>
+                <ul>
+                    <li>Luara - 01/01</li>
+                    <li>Heliton - 05/10</li>
+                    <li>Teo - 01/01</li>
+                    <li>Tiago - 01/01</li>
+                    <li>Barros - 01/01</li>
+                    <li>Santos - 01/01</li>
+                    <li>Daniel - 01/01</li>
+                    <li>Cristian - 01/01</li>
+                    <li>Pedro - 01/01</li>
+                </ul>
+            </section>
+
+            <section id="eventos" class="eventos">
+                <h2>Eventos</h2>
+                <div class="event-buttons">
+                    <button id="evento-heliton-btn">Aniversário do Heliton</button>
+                    <button id="evento-halloween-btn">Festa de Halloween da Luara</button>
+                </div>
+                <div class="evento-details" id="evento-heliton">
+                    <h3>Aniversário do Heliton</h3>
+                    <p><strong>Data:</strong> 05/10</p>
+                    <p><strong>Local:</strong> Carcassonne Pub</p>
+                    <p>Venha celebrar o aniversário do Heliton com uma festa incrível cheia de diversão!</p>
+                    <button class="confirmados-btn" id="confirmados-heliton-btn">Confirmados</button>
+                    <ul class="confirmados" id="confirmados-heliton" >
+                        <li>Luara</li>
+                        <li>Teo</li>
+                        <li>Tiago</li>
+                    </ul>
+                </div>
+                <div class="evento-details" id="evento-halloween">
+                    <h3>Festa de Halloween da Luara</h3>
+                    <p><strong>Data:</strong> 26/10</p>
+                    <p><strong>Local:</strong> Casa da Luara</p>
+                    <p>Prepare sua fantasia mais assustadora e venha se divertir na festa de Halloween da Luara!</p>
+                    <button class="confirmados-btn" id="confirmados-halloween-btn">Confirmados</button>
+                    <ul class="confirmados" id="confirmados-halloween">
+                        <li>Heliton</li>
+                        <li>Daniel</li>
+                        <li>Pedro</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>

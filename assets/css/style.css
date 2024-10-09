@@ -40,3 +40,145 @@ footer {
 main {
     padding: 2rem;
 }
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilização da seção de aniversários */
+.aniversarios {
+    background-color: #e0e0e0;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.aniversarios ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.aniversarios ul li {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.aniversarios ul li:hover {
+    background-color: #f9f9f9;
+}
+
+/* Estilização e animação da seção de eventos */
+.eventos {
+    background-color: #f0f0f0;
+    padding: 2rem;
+    text-align: center;
+}
+
+.event-buttons {
+    margin-bottom: 1rem;
+}
+
+.event-buttons button {
+    padding: 1rem;
+    margin: 0 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.event-buttons button:hover {
+    background-color: #666;
+}
+
+.event-buttons button.active {
+    background-color: #007BFF;
+    color: white;
+    border: 2px solid #0056b3;
+}
+
+/* Evento oculto (inicial) */
+.evento-details {
+    background-color: #fff;
+    padding: 0 1.5rem;
+    /* Padding horizontal mantido */
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease, margin 0.5s ease;
+}
+
+/* Evento visível (aberto) */
+.evento-details.show {
+    opacity: 1;
+    padding: 1.5rem;
+    /* Reaparece quando o evento é mostrado */
+    margin: 1rem 0;
+    /* Margem apenas quando o evento está visível */
+    max-height: 500px;
+    /* Valor grande o suficiente para o conteúdo */
+}
+
+/* Estilo para o botão de confirmados */
+.confirmados-btn {
+    background-color: #4CAF50;
+    /* Verde */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.confirmados-btn:hover {
+    background-color: #45a049;
+    /* Verde mais escuro */
+}
+
+/* Estilo para a lista de confirmados */
+.confirmados {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    max-height: 0;
+    /* Começa fechada */
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    /* Começa invisível */
+}
+
+/* Cada item da lista */
+.confirmados li {
+    padding: 8px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estado visível da lista */
+.confirmados.show {
+    max-height: 200px;
+    /* Valor suficiente para a lista */
+    opacity: 1;
+    /* Fica visível */
+}
